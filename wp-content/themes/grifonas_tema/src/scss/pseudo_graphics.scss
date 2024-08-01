@@ -1,0 +1,599 @@
+.home {
+    .banner-section {
+        .wave-graphic {
+            transform: rotate(30deg);
+            bottom: -84%;
+            right: 0%;
+            @screen md {
+                bottom: -77%;
+                right: -20%;
+            }
+            @screen lg {
+                bottom: -75%;
+                right: -25%;
+            }
+            @screen xl {
+                bottom: -55%;
+                right: -45%;
+            }
+            @screen 4xl {
+                right: -46%;
+                bottom: -55%;
+            }
+        }
+        
+    }
+    .two-cols-1 {
+        .wave-graphic{
+            top: -20%;
+            transform: skewY(10deg);
+            left: -6%;
+        }
+    }
+    .icons-section {
+        .wave-graphic{
+            bottom: 10%;
+            @screen 1xl {
+                bottom: -25%;
+            }
+            @screen 4xl {
+                display: none;
+            }
+        }
+    }
+
+    .two-cols-2 {
+        .wave-graphic{ 
+                top: -4%;
+                left: -4%;
+                transform: rotate(180deg);
+                z-index: -1;
+                @screen 4xl {
+                top: 15%;
+            }
+        }
+    }
+}
+
+
+.about-us {
+    .banner-section {
+        @media screen and (max-width: 500px) {
+            background-position: 25%;
+        }
+        .wave-graphic {
+            left: -2%;
+            transform: rotate(190deg);
+            z-index:1;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+
+    .two-cols-with-icons-1 {
+        .wave-graphic{
+            transform: skewY(10deg);
+            left: -6%;
+            top: 10%;
+        }        
+    }
+
+    .two-cols-with-icons-2 {
+        .wave-graphic{
+            top: 10%;
+            @screen 4xl {
+                display: none;
+            }
+        }   
+    }
+
+    .two-cols-with-icons-3 {
+        .wave-graphic{
+            top: 0%;
+            @screen 4xl {
+                top: -20%;
+            }
+        }   
+    }
+}
+
+.meet-the-team {
+    .banner-section {
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:0;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+    .team-section {
+        .wave-graphic {
+            top: 10%;
+            transform: rotate(10deg);
+            left: -6%;
+        }
+    }
+    .two-cols-1 {
+        .wave-graphic{ 
+            top: 20%;
+            // left: -4%;
+            // transform: rotate(180deg);
+            @screen 4xl {
+                top: -10%;
+            }
+            @screen 5xl {
+                top: -15%;
+            }
+        }
+    }
+    
+}
+
+.join-us {
+    .banner-section {
+        .wave-graphic {
+            left: -10%;
+            transform: rotate(180deg);
+            z-index: 0;
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+}
+
+.search-v-contigency  {
+    .banner-section {
+        @media screen and (max-width: 500px) {
+            background-position: 65%;
+        }
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:1;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+
+    .two-cols-1 {
+        .wave-graphic { 
+            left: -2%;
+            top: 26%;
+            transform: skewY(8deg);
+            @screen 4xl {
+                top: 27%;
+                transform: skewY(5deg);
+            }
+            @screen 5xl {
+                top: 14%;
+                transform: skewY(0deg);
+            }
+        }
+        
+    }
+}
+
+.markets{
+    .banner-section {
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:1;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+    .two-cols-1 {
+        .wave-graphic {
+            @screen 4xl {
+                display: none;
+            }
+        }
+    }
+    .two-cols-5 {
+        .wave-graphic {
+            @screen 5xl {
+                top: -20%;
+            }
+        }
+    }
+}
+
+.page-template-template-markets-page.analytics {
+     .wave-graphic {
+        g{
+            path {
+                @apply stroke-orange;
+            }
+        }
+     }
+    .banner-section {
+        @media screen and (max-width: 500px) {
+            background-position: 36%;
+        }
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:1;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+
+    .two-cols-1 {
+        .wave-graphic {
+            top: 10%;
+            transform: rotateZ(10deg);
+            left: -6%;
+            width: 115%;
+        }
+    }
+    .two-cols-3 {
+        .wave-graphic {
+            transform: rotateZ(10deg);
+            left: -18%;
+            top: 10%;
+            width: 125%;
+        }
+    }
+     .two-cols-5 {
+        .wave-graphic {
+            transform: rotateZ(180deg);
+            left: -5%;
+            top: -19%;
+            @screen 2xl {
+                top: 40%;
+            }
+            @screen 4xl {
+                display: none;
+            }
+        }
+    }
+    .two-cols-6 {
+        .wave-graphic {
+            transform: rotateZ(6deg);
+            left: -38%;
+            width: 144%;
+            top: -15%;
+            
+        }
+    }
+}
+
+.page-template-template-markets-page.economics {
+     .wave-graphic {
+        g{
+            path {
+                @apply stroke-blue;
+            }
+        }
+     }
+    .banner-section {
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:1;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+    .two-cols-1 {
+        .wave-graphic {
+            top: 10%;
+            transform: rotateZ(10deg);
+            left: -6%;
+            width: 115%;
+        }
+    }
+    .two-cols-3 {
+        .wave-graphic {
+            transform: rotateZ(10deg);
+            left: -18%;
+            top: 10%;
+            width: 125%;
+        }
+    }
+    .latest-jobs {
+        .wave-graphic {
+            transform: rotateZ(180deg);
+            left: -5%;
+            top: -19%;
+            @screen 2xl {
+                top: 15%;
+            }
+        }
+    }
+}
+
+
+.page-template-template-markets-page.gaming {
+     .wave-graphic {
+        g{
+            path {
+                @apply stroke-steel-pink;
+            }
+        }
+     }
+    .banner-section {
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:1;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+    .two-cols-1 {
+        .wave-graphic {
+            top: 10%;
+            transform: rotateZ(10deg);
+            left: -6%;
+            width: 115%;
+            @screen 3xl {
+                display: none;
+            }
+        }
+    }
+    .two-cols-2 {
+        .wave-graphic {
+            transform: rotateZ(10deg);
+            left: -18%;
+            top: 10%;
+            width: 125%;
+        }
+    }
+    .latest-jobs {
+        .wave-graphic {
+            transform: rotateZ(180deg);
+            left: -5%;
+            top: -19%;
+            @screen 2xl {
+                top: -20%;
+            }
+        }
+    }
+}
+
+.page-template-template-markets-page.consulting {
+     .wave-graphic {
+        g{
+            path {
+                @apply stroke-red;
+            }
+        }
+     }
+    .banner-section {
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:1;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+    .two-cols-1 {
+        .wave-graphic {
+            top: 10%;
+            transform: rotateZ(10deg);
+            left: -6%;
+            width: 115%;
+        }
+    }
+    .two-cols-2 {
+        .wave-graphic {
+            transform: rotateZ(10deg);
+            left: -18%;
+            top: 10%;
+            width: 125%;
+        }
+    }
+    .latest-jobs {
+        .wave-graphic {
+            transform: rotateZ(180deg);
+            left: -5%;
+            top: -19%;
+            @screen 2xl {
+                top: -20%;
+            }
+        }
+    }
+}
+
+.page-template-template-markets-page.sustainability {
+     .wave-graphic {
+        g{
+            path {
+                @apply stroke-green;
+            }
+        }
+     }
+    .banner-section {
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:1;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+    .two-cols-1 {
+        .wave-graphic {
+            top: 10%;
+            transform: rotateZ(10deg);
+            left: -6%;
+            width: 115%;
+        }
+    }
+    .two-cols-3 {
+        .wave-graphic {
+            transform: rotateZ(10deg);
+            left: -18%;
+            top: 10%;
+            width: 125%;
+        }
+    }
+    .latest-jobs {
+        .wave-graphic {
+            transform: rotateZ(180deg);
+            left: -5%;
+            top: -19%;
+            @screen 2xl {
+                top: -20%;
+            }
+        }
+    }
+}
+
+.news {
+    .banner-section {
+        @media screen and (max-width: 500px) {
+            background-position: 85%;
+        }
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:0;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+}
+
+.meetups {
+    .banner-section {
+        @media screen and (max-width: 500px) {
+            background-position: 78%;
+        }
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:0;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+    .two-cols-meetups-2{
+        .wave-graphic{
+            top: 10%;
+        }   
+    }
+}
+
+.contact {
+    .banner-section {
+        @media screen and (max-width: 500px) {
+            background-position: 72%;
+        }
+        .wave-graphic {
+            transform: rotate(190deg);
+            z-index:0;
+            left: -2%;
+            bottom: 15%;
+            @screen lg {
+                bottom: -10%;
+            }
+            @screen 3xl {
+                bottom: -20%;
+                left: -5%;
+            }
+        }
+    }
+}
+
+
+
+.single-internal_jobs,
+.single-external_jobs {
+    .wave-graphic {
+        transform: rotate(180deg);
+        left: -5%;
+        svg {
+            position: absolute;
+            bottom: 10%;
+        }
+    }
+}
+
+.single-post {
+    .wave-graphic {
+            transform: rotate(190deg);
+            z-index:-1;
+            left: -2%;
+            @screen lg {
+                top: -35%;
+            }
+            @screen 3xl {
+                top: -35%;  
+                left: -5%;
+            }
+        }
+}

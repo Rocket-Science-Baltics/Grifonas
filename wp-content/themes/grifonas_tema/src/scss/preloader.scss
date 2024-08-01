@@ -1,0 +1,17 @@
+#preloader {
+    @apply bg-dark fixed top-0 left-0 right-0 bottom-0 z-[100];
+}
+
+#status {
+    width:300px;
+    position:absolute;
+    left:50%; /* Centers the loading animation horizontally one the screen */
+    top:50%; /* Centers the loading animation vertically one the screen */
+    // background: url('../../favicons/favicon-32x32.png');
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+    svg {
+        backface-visibility: hidden;
+    }
+}
+
+
