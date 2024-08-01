@@ -1,20 +1,48 @@
 <template>
-  <LottiePlayer v-if="data.component === 'lottie-player'" v-bind="data.props" />
-  <MeetTheTeamSection v-if="data.component === 'meet-the-team'" v-bind="data.props" />
+  <div v-if="!loading">
+    <transition name="fade" mode="out-in">
+      <div>
+        <component :is="asyncComponent" v-bind="mergedProps" />
+      </div>
+    </transition>
+  </div>
+  <div v-else>
+    <!-- Loading indicator -->
+    <div class="loading-spinner"></div>
+  </div>
 </template>
 
 <script setup>
-import { defineAsyncComponent, reactive } from "vue";
+import { defineAsyncComponent, reactive, ref, onMounted, computed } from "vue";
 
-const LottiePlayer = defineAsyncComponent(() => import('./lottie-player.vue'));
-const MeetTheTeamSection = defineAsyncComponent(() => import('./meet-the-team.vue'));
-
-const props = defineProps(['component', 'props'])
+const props = defineProps({
+  component: String,
+  props: Object,
+});
 
 const data = reactive({
   component: props.component,
   props: props.props,
 })
+
+const acfFields = ref({});
+const loading = ref(true);
+const themeLoading = ref(true);
+
+const shouldPassAcfFields = computed(() => {
+  return Object.keys(acfFields.value).length > 0;
+});
+
+const mergedProps = computed(() => {
+  return shouldPassAcfFields.value
+      ? {
+        ...data.props,
+        acfFields: acfFields.value,
+      }
+      : {
+        ...data.props,
+      };
+});
 
 </script>
 
