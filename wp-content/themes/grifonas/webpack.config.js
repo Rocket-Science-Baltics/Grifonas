@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
-const { VueLoaderPlugin } = require("vue-loader");
 
 const env_paths = {
   DIST: path.resolve(__dirname, "dist"),
@@ -20,21 +19,12 @@ module.exports = {
   mode: "production",
   plugins: [
     new MiniCssExtractPlugin(),
-    new VueLoaderPlugin(),
     new CompressionPlugin({
       test: /\.js(\?.*)?$/i,
     }),
   ],
   module: {
     rules: [
-      {
-        test: /\.vue$/,
-        use: [
-          {
-            loader: "vue-loader",
-          },
-        ],
-      },
       {
         test: /\.(css|scss)$/,
         use: [

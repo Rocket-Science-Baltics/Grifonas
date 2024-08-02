@@ -22,12 +22,12 @@ $logo =  get_field('header_logo', 'options');
             <div class="w-full z-20 relative">
                 <div class="flex justify-between items-center pt-8 pb-6 bg-white z-20">
                     <div class="logo absolute top-0 max-w-[160px] lg:max-w-[200px] p-2.5 rounded-full bg-white z-20">
-                        <a href="<?php echo esc_url(home_url('/')); ?>">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="">
                             <img class="w-full max-sm:max-w-[160px]" src="<?php echo esc_url($logo['url']); ?>"
                                  data-no-lazy="1" alt="<?php echo esc_attr($logo['title']); ?>" />
                         </a>
                     </div>
-                    <div class="main-menu max-lg:flex-start flex gap-8">
+                    <div class="main-menu max-lg:flex-start lg:w-full flex gap-8 ml-[234px]">
                         <?php
                         wp_nav_menu([
                             'theme_location' => 'header-menu',

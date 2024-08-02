@@ -9,7 +9,6 @@
   "author": "Rocket Science",
   "license": "GPL-2.0-only",
   "dependencies": {
-    "@vueuse/core": "^10.9.0",
     "compression-webpack-plugin": "^10.0.0",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.2.2",
@@ -21,13 +20,10 @@
     "sass-loader": "^13.1.0",
     "tailwindcss": "^3.2.1",
     "terser-webpack-plugin": "^5.3.6",
-    "vue": "^3.4.27",
-    "vue-loader": "^17.4.2",
     "webpack": "^5.74.0"
   },
   "devDependencies": {
     "file-loader": "^6.2.0",
-    "svg-inline-loader": "^0.8.2",
     "webpack-cli": "^4.10.0"
   }
 }
