@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+}
+
+.container {
+  @screen xs {
+    @apply max-w-[375px];
+  }
+  @screen sm {
+    @apply max-w-[640px];
+  }
+  @screen md {
+    @apply max-w-[768px];
+  }
+  @screen lg {
+    @apply max-w-[1024px];
+  }
+  @screen xl {
+    @apply max-w-[1270px];
+  }
+}
