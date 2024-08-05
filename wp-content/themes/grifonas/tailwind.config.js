@@ -16,19 +16,21 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        manrope: ["Manrope", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
-        jewel: "#126B3A",
-        baltic_sea: "#2B2A29",
-        fern_green: "#5C9246",
-        turtle_green: "#87B14B",
-        harp: "#EAF0E0",
-        moon_mist: "#D2E0C1",
-        white_smoke: "#F6F6F5",
-        grey: "#A7A7A7",
+        blackGR: "#26272B",
+        whiteGR: "#FFFFFF",
+        blueGR: "#D2E6FF",
+        lblueGR: "#E9F1FB",
+        aquaGR: "#CFFFFD",
+        brownGR: "#8A817C",
       },
+      backgroundPosition: {
+        'banner-image-position': '0% 30%',
+      }
     },
     container: {
       center: true,
