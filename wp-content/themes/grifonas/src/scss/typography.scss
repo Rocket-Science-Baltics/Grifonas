@@ -31,7 +31,8 @@ p {
   @apply font-normal;
 }
 
-#about_us .section-content p {
+#about_us .section-content p,
+#specialists .section-content p {
   font-size: clamp(8px, 2vw + 1rem, 16px);
   line-height: 1.5rem;
   @apply font-poppins;
