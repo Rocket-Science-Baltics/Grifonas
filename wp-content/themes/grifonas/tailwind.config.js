@@ -27,6 +27,7 @@ module.exports = {
         lblueGR: "#E9F1FB",
         aquaGR: "#CFFFFD",
         brownGR: "#8A817C",
+        aliceBlueGR: "#F7FBFF",
       },
       backgroundPosition: {
         'banner-image-position': '0% 30%',
