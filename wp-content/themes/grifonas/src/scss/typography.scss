@@ -1,40 +1,48 @@
 h1 {
   font-size: clamp(18px, 2vw + 1rem , 40px);
   line-height: 3rem;
-  @apply font-quicksand;
-  @apply font-medium;
+  @apply font-quicksand font-medium;
 }
 
 h2 {
   font-size: clamp(18px, 2vw + 1rem, 32px);
   line-height: 3rem;
-  @apply font-quicksand;
-  @apply font-medium;
+  @apply font-quicksand font-medium;
 }
 
 header a {
-  @apply font-poppins;
-  @apply font-normal;
+  @apply font-poppins font-normal;
 }
 
 a {
   font-size: clamp(8px, 2vw + 1rem, 16px);
   line-height: 1.5rem;
-  @apply font-inter;
-  @apply font-semibold;
+  @apply font-inter font-semibold;
 }
 
 p {
   font-size: clamp(8px, 2vw + 1rem, 13px);
   line-height: 1.5rem;
-  @apply font-poppins;
-  @apply font-normal;
+  @apply font-poppins font-normal;
 }
 
 #about_us .section-content p,
 #specialists .section-content p {
   font-size: clamp(8px, 2vw + 1rem, 16px);
   line-height: 1.5rem;
-  @apply font-poppins;
-  @apply font-normal;
+  @apply font-poppins font-normal;
 }
+
+#hydrotherapy .section-content {
+  .section-top p {
+    font-size: clamp(8px, 2vw + 1rem, 18px);
+    line-height: 1.75rem;
+    @apply font-poppins font-normal;
+  }
+
+  p {
+    font-size: clamp(8px, 2vw + 1rem, 16px);
+    line-height: 1.5rem;
+  }
+}
+
