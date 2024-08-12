@@ -26,14 +26,14 @@ p {
   @apply font-poppins font-normal;
 }
 
-#about_us .section-content p,
-#specialists .section-content p {
+#about_us .section-content p {
   font-size: clamp(8px, 2vw + 1rem, 16px);
   line-height: 1.5rem;
   @apply font-poppins font-normal;
 }
 
-#hydrotherapy .section-content {
+#hydrotherapy .section-content,
+#laser_therapy .section-content {
   .section-top p {
     font-size: clamp(8px, 2vw + 1rem, 18px);
     line-height: 1.75rem;

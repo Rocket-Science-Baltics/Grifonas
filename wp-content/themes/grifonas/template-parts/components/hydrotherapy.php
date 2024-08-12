@@ -34,7 +34,7 @@ $image_id = $paragraph_section['image']['ID'];
                 <div>
                     <?php echo wp_get_attachment_image($image_id, 'full', '', ['class' => 'w-full rounded-[8px]']); ?>
                 </div>
-                <div>
+                <div class="flex flex-col gap-[32px]">
                     <?php echo $paragraph_section['paragraph_text']['paragraph']; ?>
                 </div>
             </div>
