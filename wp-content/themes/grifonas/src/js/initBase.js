@@ -26,13 +26,13 @@ export default function initBase() {
   // check scroll position upon scrolling
   window.addEventListener("scroll", checkScroll);
 
-  // const showBtn = document.querySelector(".btn-bars"),
-  //   closeBtn = document.querySelector(".btn-close"),
-  //   navMenu = document.querySelector(".navbar-collapse");
-  // showBtn.addEventListener("click", () => {
-  //   navMenu.classList.toggle("showMenu");
-  // });
-  // closeBtn.addEventListener("click", () => {
-  //   navMenu.classList.remove("showMenu");
-  // });
+  const showBtn = document.querySelector(".btn-bars"),
+    closeBtn = document.querySelector(".btn-close"),
+    navMenu = document.querySelector(".navbar-collapse");
+  showBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("showMenu");
+  });
+  closeBtn.addEventListener("click", () => {
+    navMenu.classList.remove("showMenu");
+  });
 }

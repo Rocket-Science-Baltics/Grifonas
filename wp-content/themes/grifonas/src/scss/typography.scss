@@ -17,7 +17,7 @@ header a {
 a {
   font-size: clamp(8px, 2vw + 1rem, 16px);
   line-height: 1.5rem;
-  @apply font-inter font-semibold;
+  @apply font-inter font-normal;
 }
 
 p {
@@ -33,7 +33,9 @@ p {
 }
 
 #hydrotherapy .section-content,
-#laser_therapy .section-content {
+#laser_therapy .section-content,
+#preparation .section-content,
+#contacts .section-content {
   .section-top p {
     font-size: clamp(8px, 2vw + 1rem, 18px);
     line-height: 1.75rem;
@@ -43,6 +45,23 @@ p {
   p {
     font-size: clamp(8px, 2vw + 1rem, 16px);
     line-height: 1.5rem;
+  }
+
+  .additional-message p {
+    font-size: clamp(8px, 2vw + 1rem, 13px);
+    line-height: 19px;
+  }
+
+  .contact-title p {
+    font-size: clamp(8px, 2vw + 1rem, 13px);
+    @apply font-semibold;
+    line-height: 18px;
+  }
+
+  .contact-action-link a {
+    font-size: clamp(8px, 2vw + 1rem, 18px);
+    line-height: 1.5rem;
+    @apply font-normal;
   }
 }
 

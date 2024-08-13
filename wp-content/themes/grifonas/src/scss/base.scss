@@ -30,8 +30,45 @@ body {
   }
 }
 
+header {
+  &.scrolled {
+    @apply py-4;
+  }
+  .showMenu {
+    transform: translateX(0) !important;
+  }
+  .navbar {
+    .nav-item {
+      a {
+        @apply transition-all hover:text-red-50;
+      }
+      &.current-menu-item {
+        a {
+          @apply text-red-50 font-bold;
+        }
+      }
+    }
+  }
+}
+
 .banner-clip-path {
   clip-path: polygon(0 0,0 100%,5% 99.5%,10% 98.6%,20% 95.7%,22% 94.9%,25% 93.5%,28% 91.9%,30% 91%,32% 90%,35% 88.5%,40% 85.5%,50% 80%,70% 74%,90% 71%,100% 70.5%,100% 0,0 0);
+}
+
+#hydrotherapy,
+#contacts {
+  @apply relative;
+}
+
+#hydrotherapy:before,
+#contacts:before {
+  @apply content-[''] w-full h-full absolute top-0 left-0 bg-whiteGR;
+  clip-path: polygon(0 0,0 100%,5% 99.5%,10% 98.6%,20% 95.7%,22% 94.9%,25% 93.5%,28% 91.9%,30% 91%,32% 90%,35% 88.5%,40% 85.5%,50% 80%,70% 74%,90% 71%,100% 70.5%,100% 0,0 0);
+}
+
+#hydrotherapy .container,
+#contacts .container {
+  @apply relative z-10;
 }
 
 .paragraph-w-breakline p:nth-child(even):after {
@@ -42,3 +79,4 @@ body {
   margin: 22px 0 18px 0;
   background: #AFF1EE;
 }
+
