@@ -16,7 +16,7 @@ $button = $args['button']['button_link'];
 $image = $args['image'];
 $button_options = $args['button'];
 
-$logo_id = $top_heading['logo'];
+$logo_id = $top_heading['logo']['value']['ID'];
 $text = $top_heading['text'];
 $heading_text = $heading['heading'];
 $description = $heading['description'];
@@ -29,13 +29,13 @@ $button_background_color = $button_options['button_background'];
 $button_text_color = $button_options['button_text_color'];
 $button_rounded = $button_options['button_style'];
 ?>
-<section class="bg-aliceBlueGR">
-    <div class="banner-clip-path relative pt-[145px] pb-[151px] bg-<?php echo $background_color; ?>">
+<section id="landing-banner" class="bg-aliceBlueGR">
+    <div class="relative banner-clip-path pt-[145px] pb-[151px] bg-<?php echo $background_color; ?>">
         <div class="container">
             <div class="flex flex-row">
                 <div class="w-1/2">
                     <div class="flex gap-[13px] mb-[23px]">
-                        <?php echo file_get_contents($logo_id); ?>
+                        <?php echo wp_get_attachment_image($logo_id, 'full', ''); ?>
                         <?php echo $text; ?>
                     </div>
                     <div class="mb-[19px]">

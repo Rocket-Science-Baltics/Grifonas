@@ -1,4 +1,11 @@
 <?php
+$lang = get_bloginfo('language');
+$template_title = 'about-us';
+
+if ($lang === 'lt-LT') {
+    $template_title = 'apie-mus';
+}
+
 $section_data = get_section_options($args);
 
 $section_options = $args['section_options'];
@@ -16,7 +23,7 @@ $content_sections = $args['section_content'];
 $title = $section_title['section_title'];
 $content_title = $section_title['section_content_title'];
 ?>
-<section id="about_us" class="pb-16 bg-<?php echo $background_color; ?>">
+<section id="<?php echo $template_title; ?>" class="pb-16 bg-<?php echo $background_color; ?>">
     <div class="container">
         <div class="flex flex-col justify-center items-center mb-[38px]">
             <div>

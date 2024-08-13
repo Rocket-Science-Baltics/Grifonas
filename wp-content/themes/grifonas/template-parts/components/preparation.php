@@ -1,4 +1,11 @@
 <?php
+$lang = get_bloginfo('language');
+$template_title = 'preparation';
+
+if ($lang === 'lt-LT') {
+    $template_title = 'pasiruosimas';
+}
+
 $section_data = get_section_options($args);
 
 $section_options = $args['section_options'];
@@ -24,7 +31,7 @@ $additional_message = $additional_section_message['paragraph'];
 $additional_message_bg = $additional_section_message['paragraph_background'];
 $additional_message_text_color = $additional_section_message['paragraph_text_color'];
 ?>
-<section id="preparation" class="pt-[54px] pb-[67px] bg-<?php echo $background_color; ?>">
+<section id="<?php echo $template_title; ?>" class="pt-[54px] pb-[67px] bg-<?php echo $background_color; ?>">
     <div class="container">
         <div class="flex flex-col justify-center items-center">
             <div>

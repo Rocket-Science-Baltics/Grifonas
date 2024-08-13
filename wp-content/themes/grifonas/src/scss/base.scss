@@ -26,7 +26,7 @@ body {
     @apply max-w-[1024px];
   }
   @screen xl {
-    @apply max-w-[1270px];
+    @apply max-w-[1150px];
   }
 }
 
@@ -52,20 +52,31 @@ header {
 }
 
 .banner-clip-path {
-  clip-path: polygon(0 0,0 100%,5% 99.5%,10% 98.6%,20% 95.7%,22% 94.9%,25% 93.5%,28% 91.9%,30% 91%,32% 90%,35% 88.5%,40% 85.5%,50% 80%,70% 74%,90% 71%,100% 70.5%,100% 0,0 0);
+  clip-path: polygon(100% 0, 100% 78%, 82% 79%, 63% 83%, 50% 88%, 33% 94%, 18% 98%, 6% 100%, 0 100%, 0 0);
+  //clip-path: polygon(0 0,0 100%,5% 99.5%,10% 98.6%,20% 95.7%,22% 94.9%,25% 93.5%,28% 91.9%,30% 91%,32% 90%,35% 88.5%,40% 85.5%,50% 80%,70% 74%,90% 71%,100% 70.5%,100% 0,0 0);
 }
 
+#hidroterapija,
+#kontaktai,
 #hydrotherapy,
 #contacts {
   @apply relative;
 }
 
-#hydrotherapy:before,
-#contacts:before {
+#hidroterapija:before,
+#hydrotherapy:before {
   @apply content-[''] w-full h-full absolute top-0 left-0 bg-whiteGR;
-  clip-path: polygon(0 0,0 100%,5% 99.5%,10% 98.6%,20% 95.7%,22% 94.9%,25% 93.5%,28% 91.9%,30% 91%,32% 90%,35% 88.5%,40% 85.5%,50% 80%,70% 74%,90% 71%,100% 70.5%,100% 0,0 0);
+  clip-path: polygon(89% 0, 77% 1%, 67% 2%, 53% 4%, 39% 6%, 24% 8%, 10% 9%, 0 9%, 0 0, 100% 0);
 }
 
+#kontaktai:before,
+#contacts:before {
+  @apply content-[''] w-full h-full absolute top-0 left-0 bg-whiteGR;
+  clip-path: polygon(100% 0, 100% 45%, 83% 45%, 63% 47%, 49% 52%, 32% 58%, 18% 61%, 8% 62%, 0 62%, 0 0);
+}
+
+#hidroterapija .container,
+#kontaktai .container,
 #hydrotherapy .container,
 #contacts .container {
   @apply relative z-10;

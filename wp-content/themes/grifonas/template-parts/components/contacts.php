@@ -1,4 +1,11 @@
 <?php
+$lang = get_bloginfo('language');
+$template_title = 'contacts';
+
+if ($lang === 'lt-LT') {
+    $template_title = 'kontaktai';
+}
+
 $section_data = get_section_options($args);
 
 $section_options = $args['section_options'];
@@ -18,7 +25,7 @@ $partners_section = $content_section['section_partners'];
 $title = $section_title['section_title'];
 $content_title = $section_title['section_content_title'];
 ?>
-<section id="contacts" class="pt-[57px] pb-[82px] bg-<?php echo $background_color; ?>">
+<section id="<?php echo $template_title; ?>" class="pt-[57px] pb-[82px] bg-<?php echo $background_color; ?>">
     <div class="container">
         <div class="flex flex-col justify-center items-center">
             <div>

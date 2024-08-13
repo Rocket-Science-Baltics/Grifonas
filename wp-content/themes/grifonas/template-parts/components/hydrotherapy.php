@@ -1,4 +1,11 @@
 <?php
+$lang = get_bloginfo('language');
+$template_title = 'hydrotherapy';
+
+if ($lang === 'lt-LT') {
+    $template_title = 'hidroterapija';
+}
+
 $section_data = get_section_options($args);
 
 $section_options = $args['section_options'];
@@ -19,7 +26,7 @@ $title = $section_title['section_title'];
 $content_title = $section_title['section_content_title'];
 $image_id = $paragraph_section['image']['ID'];
 ?>
-<section id="hydrotherapy" class="pb-[44px] bg-<?php echo $background_color; ?>">
+<section id="<?php echo $template_title; ?>" class="pt-[166px] pb-[44px] bg-<?php echo $background_color; ?>">
     <div class="container">
         <div class="flex flex-col justify-center items-center">
             <div>
@@ -38,9 +45,9 @@ $image_id = $paragraph_section['image']['ID'];
                     <?php echo $paragraph_section['paragraph_text']['paragraph']; ?>
                 </div>
             </div>
-            <div class="flex flex-wrap gap-x-[19px] gap-y-[26px]">
+            <div class="flex flex-wrap justify-between w-full gap-y-[26px]">
                 <?php foreach ($list_section as $index => $list_item): ?>
-                    <div class="flex flex-col gap-[10px] <?php echo $index % 2 ? 'max-w-[734px]' : 'max-w-[357px]'; ?>">
+                    <div class="flex flex-col gap-[10px] w-full <?php echo $index % 2 ? 'max-w-[734px]' : 'max-w-[357px]'; ?>">
                         <?php
                         $item_image_id = $list_item['list_paragraph']['paragraph_logo']['ID'];
                         $item_paragraph = $list_item['list_paragraph']['paragraph'];
