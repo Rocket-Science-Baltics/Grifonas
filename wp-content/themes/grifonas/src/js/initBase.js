@@ -35,4 +35,10 @@ export default function initBase() {
   closeBtn.addEventListener("click", () => {
     navMenu.classList.remove("showMenu");
   });
+
+  document.querySelectorAll('select[name="language_switcher"]').forEach(function (switcher) {
+    switcher.addEventListener('change', function (event) {
+      location.href = event.currentTarget.value
+    });
+  });
 }

@@ -19,10 +19,5 @@
         }
     }
     ?>
-    <script type="text/javascript">
-        document.getElementById('language_switcher').addEventListener('change', function (event) {
-            location.href = event.currentTarget.value
-        });
-    </script>
 </select>
 <?php endif; ?>
