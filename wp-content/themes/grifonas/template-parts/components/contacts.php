@@ -48,10 +48,10 @@ $content_title = $section_title['section_content_title'];
                                 $active_logos = $contact_section['contact']['active_logos'];
 
                                 foreach ($active_logos as $logo) {
-                                    echo '<a href="' . $logo['active_logo_link']['url'] . '">' . '<img src="' . $logo['active_logo'] . '" title="' . $logo['active_logo_link']['title'] . '" class=""></a>';
+                                    echo '<a href="' . $logo['active_logo_link']['url'] . '" target="' . $logo['active_logo_link']['target'] . '">' . '<img src="' . $logo['active_logo'] . '" title="' . $logo['active_logo_link']['title'] . '" class=""></a>';
                                 }
                             } else {
-                                echo '<a href="' . $contact_section['contact']['contact_link']['url'] . '" class="' . $contact_section['contact']['contact_link_text_color'] . '">' . $contact_section['contact']['contact_link']['title'] . '</a>';
+                                echo '<a href="' . $contact_section['contact']['contact_link']['url'] . '" target="' . $contact_section['contact']['contact_link']['target'] . '" class="' . $contact_section['contact']['contact_link_text_color'] . '">' . $contact_section['contact']['contact_link']['title'] . '</a>';
                             }
                             ?>
                         </div>
