@@ -33,7 +33,7 @@ $content_title = $section_title['section_content_title'];
                 <?php echo $content_title; ?>
             </div>
         </div>
-        <div class="section-content grid grid-cols-2 gap-x-[22px]">
+        <div class="section-content grid grid-cols-2 max-md:grid-cols-1 gap-x-[22px]">
             <div class="flex flex-col gap-[16px]">
                 <?php foreach ($content_sections['content_left'] as $section): ?>
                     <?php echo $section['section_paragraph']['paragraph']; ?>

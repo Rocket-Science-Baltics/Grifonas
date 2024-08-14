@@ -22,7 +22,6 @@ $heading_text = $heading['heading'];
 $description = $heading['description'];
 $button_title = $button['title'];
 $button_url = $button['url'];
-$image_id = $image['ID'];
 
 $background_color = $section_options['background_colour'];
 $button_background_color = $button_options['button_background'];
@@ -33,7 +32,7 @@ $button_rounded = $button_options['button_style'];
     <div class="relative banner-clip-path pt-[145px] pb-[151px] bg-<?php echo $background_color; ?>">
         <div class="container">
             <div class="flex flex-row">
-                <div class="w-1/2">
+                <div class="w-1/2 max-sm:w-full">
                     <div class="flex gap-[13px] mb-[23px]">
                         <?php echo wp_get_attachment_image($logo_id, 'full', ''); ?>
                         <?php echo $text; ?>
@@ -50,8 +49,8 @@ $button_rounded = $button_options['button_style'];
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2">
-                    <div class="absolute w-1/2 right-0 top-0 h-full bg-[url('http://grifonas.rsdev.lt/wp-content/uploads/2024/08/717199f8e3291381ec0bdfb1e287576b.webp')] bg-cover bg-no-repeat bg-banner-image-position"></div>
+                <div class="w-1/2 max-lg:hidden">
+                    <div class="absolute w-1/2 right-0 top-0 h-full bg-cover bg-no-repeat bg-center bg-origin-border" style="background-image: url('<?php echo $image['url']; ?>')"></div>
                 </div>
             </div>
         </div>

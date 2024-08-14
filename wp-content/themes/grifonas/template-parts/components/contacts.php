@@ -56,7 +56,7 @@ $content_title = $section_title['section_content_title'];
             <div class="flex justify-center mt-[49px] mb-[48px]">
                 <?php echo $partners_section['section_partners_title']; ?>
             </div>
-            <div class="flex flex-wrap justify-between gap-[20px]">
+            <div class="flex flex-wrap justify-between max-md:justify-center gap-[20px]">
                 <?php foreach ($partners_section['partners'] as $partner): ?>
                     <?php echo wp_get_attachment_image($partner['partner_logo']['ID'], 'full', '', ['class' => 'max-w-[263px] max-h-[105px] rounded-[16px] object-cover']) ?>
                 <?php endforeach; ?>
