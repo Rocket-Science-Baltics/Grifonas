@@ -36,14 +36,24 @@ $content_title = $section_title['section_content_title'];
             </div>
         </div>
         <div class="section-content mt-[55px] mb-[49px]">
-            <div class="flex justify-between flex-wrap">
+            <div class="flex justify-between flex-wrap gap-y-[10px]">
                 <?php foreach ($contacts_section as $contact_section): ?>
                     <div class="flex flex-col gap-x-[9px] gap-y-[9px]">
                         <div class="contact-title text-<?php echo $contact_section['contact']['contact_title_text_color']; ?>">
                             <?php echo strtoupper($contact_section['contact']['contact_title']); ?>
                         </div>
-                        <div class="contact-action-link w-fit">
-                            <?php echo '<a href="' . $contact_section['contact']['contact_link']['url'] . '" class="' . $contact_section['contact']['contact_link_text_color'] . '">' . $contact_section['contact']['contact_link']['title'] . '</a>'; ?>
+                        <div class="contact-action-link w-fit flex flex-row gap-[10px]">
+                            <?php
+                            if ($contact_section['contact']['enable_contact_logo']) {
+                                $active_logos = $contact_section['contact']['active_logos'];
+
+                                foreach ($active_logos as $logo) {
+                                    echo '<a href="' . $logo['active_logo_link']['url'] . '">' . '<img src="' . $logo['active_logo'] . '" title="' . $logo['active_logo_link']['title'] . '" class=""></a>';
+                                }
+                            } else {
+                                echo '<a href="' . $contact_section['contact']['contact_link']['url'] . '" class="' . $contact_section['contact']['contact_link_text_color'] . '">' . $contact_section['contact']['contact_link']['title'] . '</a>';
+                            }
+                            ?>
                         </div>
                     </div>
                 <?php endforeach; ?>

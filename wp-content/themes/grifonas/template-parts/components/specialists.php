@@ -27,7 +27,6 @@ $image_id = $image['ID'];
 ?>
 <section id="<?php echo $template_title; ?>" class="pt-[39px] bg-<?php echo $background_color; ?>">
     <div class="container">
-<!--        <div class="grid grid-cols-3 gap-x-[19px]">-->
         <div class="flex justify-between max-md:flex-col">
             <div class="flex flex-col max-md:flex-row mr-[19px] max-md:mr-0 max-md:justify-between">
                 <div class="flex flex-col">
