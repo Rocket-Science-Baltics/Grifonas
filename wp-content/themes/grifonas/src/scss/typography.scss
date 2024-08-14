@@ -26,15 +26,20 @@ p {
   @apply font-poppins font-normal;
 }
 
-#about_us .section-content p {
+#apie-mus .section-content p,
+#about-us .section-content p {
   font-size: clamp(8px, 2vw + 1rem, 16px);
   line-height: 1.5rem;
   @apply font-poppins font-normal;
 }
 
+#hidroterapija .section-content,
 #hydrotherapy .section-content,
+#lazerio-terapija .section-content,
 #laser_therapy .section-content,
+#pasiruosimas .section-content,
 #preparation .section-content,
+#kontaktai .section-content,
 #contacts .section-content {
   .section-top p {
     font-size: clamp(8px, 2vw + 1rem, 18px);
