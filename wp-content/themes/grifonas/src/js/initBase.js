@@ -29,9 +29,16 @@ export default function initBase() {
 
   const showBtn = document.querySelector(".btn-bars"),
     closeBtn = document.querySelector(".btn-close"),
-    navMenu = document.querySelector(".navbar-collapse");
+    navMenu = document.querySelector(".navbar-collapse"),
+    menuItems = document.querySelectorAll(".menu-item a");
   showBtn.addEventListener("click", () => {
     navMenu.classList.toggle("showMenu");
+
+    menuItems.forEach(function (item) {
+      item.addEventListener('click', () => {
+        navMenu.classList.remove("showMenu");
+      });
+    });
   });
   closeBtn.addEventListener("click", () => {
     navMenu.classList.remove("showMenu");
