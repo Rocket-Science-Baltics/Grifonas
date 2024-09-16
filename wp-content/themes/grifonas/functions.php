@@ -17,6 +17,7 @@ include get_template_directory() . '/functions/menu.php';
 include get_template_directory() . '/functions/cleanup.php';
 include get_template_directory() . '/functions/walker.php';
 include get_template_directory() . '/functions/flexibleAcf.php';
+include get_template_directory() . '/functions/lang.php';
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
